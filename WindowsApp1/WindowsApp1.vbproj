@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E569E4C-D250-4090-A103-DE88198700DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGOCOLOR.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Compressed\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Compressed\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\Documents\refer\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\databaseClass.vb" />
+    <Compile Include="Admin\fmrRent.Designer.vb">
+      <DependentUpon>fmrRent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\fmrRent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmClient.Designer.vb">
+      <DependentUpon>frmClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmDash.Designer.vb">
+      <DependentUpon>frmDash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmDash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmDashboard.Designer.vb">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmHouse.Designer.vb">
+      <DependentUpon>frmHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmHouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmOwner.Designer.vb">
+      <DependentUpon>frmOwner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmOwner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmPropertyManagement.Designer.vb">
+      <DependentUpon>frmPropertyManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmPropertyManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAgentManagement.Designer.vb">
+      <DependentUpon>frmAgentManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmAgentManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmMaintenance.Designer.vb">
+      <DependentUpon>frmMaintenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSale.Designer.vb">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmTenantManagement.Designer.vb">
+      <DependentUpon>frmTenantManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmTenantManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSetting.Designer.vb">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmTransaction.Designer.vb">
+      <DependentUpon>frmTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Mode.vb" />
+    <Compile Include="Agent\AgentDashboard.Designer.vb">
+      <DependentUpon>AgentDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\AgentDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmAgentSetting.Designer.vb">
+      <DependentUpon>frmAgentSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmAgentSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmAM.Designer.vb">
+      <DependentUpon>frmAM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmAM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmCustomerDetail.Designer.vb">
+      <DependentUpon>frmCustomerDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmCustomerDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmPictureView.Designer.vb">
+      <DependentUpon>frmPictureView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmPictureView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmProperty.Designer.vb">
+      <DependentUpon>frmProperty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmProperty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmTransactionSale.Designer.vb">
+      <DependentUpon>frmTransactionSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmTransactionSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="signIn.Designer.vb">
+      <DependentUpon>signIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent\frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent\frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash screen.Designer.vb">
+      <DependentUpon>splash screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\fmrRent.resx">
+      <DependentUpon>fmrRent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmClient.resx">
+      <DependentUpon>frmClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmDash.resx">
+      <DependentUpon>frmDash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmHouse.resx">
+      <DependentUpon>frmHouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmOwner.resx">
+      <DependentUpon>frmOwner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmPropertyManagement.resx">
+      <DependentUpon>frmPropertyManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSale.resx">
+      <DependentUpon>frmSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmTenantManagement.resx">
+      <DependentUpon>frmTenantManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSetting.resx">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmTransaction.resx">
+      <DependentUpon>frmTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\AgentDashboard.resx">
+      <DependentUpon>AgentDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmDashboard.resx">
+      <DependentUpon>frmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmAgentManagement.resx">
+      <DependentUpon>frmAgentManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmAgentSetting.resx">
+      <DependentUpon>frmAgentSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmAM.resx">
+      <DependentUpon>frmAM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmCustomerDetail.resx">
+      <DependentUpon>frmCustomerDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmPictureView.resx">
+      <DependentUpon>frmPictureView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmProperty.resx">
+      <DependentUpon>frmProperty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmTransactionSale.resx">
+      <DependentUpon>frmTransactionSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signIn.resx">
+      <DependentUpon>signIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent\frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash screen.resx">
+      <DependentUpon>splash screen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\OIP %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOCOLOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simone-hutsch-_wpce-AsLxk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homewhitebluedoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landNoBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productNobg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-settings-icon-29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logOutnoBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOBLACKwHITE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-user-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-user-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insightWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-black-silhouette-without-door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOCOLOR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simone-hutsch-_wpce-AsLxk-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simone-hutsch-_wpce-AsLxk-unsplash %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rentwhiteBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houseWhiteBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productWhiteNoBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inboxWhiteNoBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingWhiteNoBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOCOLOR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-expect-best-79873-323705.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-expect-best-79873-323776.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-binyaminmellish-106399.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOBLACKwHITE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-minus-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-minus-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-minus-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-minus-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-minus-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-minus-sign-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-minus-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-minus-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-minus-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-close-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-close-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-close-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-close-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-cross-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-close-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\021-close-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\022-delete-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\023-close-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\024-eyebrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\025-close-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\026-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027-visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\029-visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-rent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-financial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-real-estate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-real-estate-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-deal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-property-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-acquisition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-increasing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-trend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-handshake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\016-costumer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017-customer-engagement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018-client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\019-deposit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020-financial-statement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\021-financial-advisor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-menu-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-menu-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\005-menu-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\007-burger-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009-menu-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-list-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011-menus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012-menu-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013-app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014-app-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015-hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGOCOLOR.ico" />
+    <None Include="Resources\004-playwhiteRight.png" />
+    <None Include="Resources\004-playwhiteLeft.png" />
+    <None Include="Resources\004-playleft.png" />
+    <None Include="Resources\007-arrow-3.png" />
+    <None Include="Resources\006-arrow-2.png" />
+    <None Include="Resources\005-arrows-1.png" />
+    <None Include="Resources\004-play.png" />
+    <None Include="Resources\003-arrow-1.png" />
+    <None Include="Resources\002-arrows.png" />
+    <None Include="Resources\001-arrow.png" />
+    <None Include="Resources\058-folder-2.png" />
+    <None Include="Resources\057-folder-1.png" />
+    <None Include="Resources\056-search-1.png" />
+    <None Include="Resources\055-folder.png" />
+    <None Include="Resources\054-search.png" />
+    <None Include="Resources\053-system.png" />
+    <None Include="Resources\052-refresh-4.png" />
+    <None Include="Resources\051-reload-update.png" />
+    <None Include="Resources\050-change-1.png" />
+    <None Include="Resources\049-shuffle.png" />
+    <None Include="Resources\048-change.png" />
+    <None Include="Resources\047-exchange.png" />
+    <None Include="Resources\046-arrow.png" />
+    <None Include="Resources\045-sunny-3.png" />
+    <None Include="Resources\044-sun.png" />
+    <None Include="Resources\043-sunny-2.png" />
+    <None Include="Resources\042-sunny-1.png" />
+    <None Include="Resources\041-sunny.png" />
+    <None Include="Resources\040-refresh-3.png" />
+    <None Include="Resources\039-refresh-2.png" />
+    <None Include="Resources\038-update.png" />
+    <None Include="Resources\037-data-processing.png" />
+    <None Include="Resources\036-loop.png" />
+    <None Include="Resources\035-browser.png" />
+    <None Include="Resources\034-system-update.png" />
+    <None Include="Resources\033-refresh-1.png" />
+    <None Include="Resources\032-updated.png" />
+    <None Include="Resources\031-refresh.png" />
+    <None Include="Resources\030-changes.png" />
+    <None Include="Resources\029-delete-9.png" />
+    <None Include="Resources\028-delete-8.png" />
+    <None Include="Resources\027-trash-3.png" />
+    <None Include="Resources\026-bin-2.png" />
+    <None Include="Resources\025-trash-bin.png" />
+    <None Include="Resources\024-rubbish-can.png" />
+    <None Include="Resources\023-delete-7.png" />
+    <None Include="Resources\022-delete-6.png" />
+    <None Include="Resources\021-delete-5.png" />
+    <None Include="Resources\020-delete-4.png" />
+    <None Include="Resources\019-delete-3.png" />
+    <None Include="Resources\018-trash-2.png" />
+    <None Include="Resources\017-delete-2.png" />
+    <None Include="Resources\016-trash-1.png" />
+    <None Include="Resources\015-trash-can.png" />
+    <None Include="Resources\014-delete-1.png" />
+    <None Include="Resources\013-delete.png" />
+    <None Include="Resources\012-trash.png" />
+    <None Include="Resources\011-bin-1.png" />
+    <None Include="Resources\010-rubber.png" />
+    <None Include="Resources\009-clear-1.png" />
+    <None Include="Resources\008-clear.png" />
+    <None Include="Resources\007-bin.png" />
+    <None Include="Resources\006-clean.png" />
+    <None Include="Resources\005-broom.png" />
+    <None Include="Resources\004-eraser.png" />
+    <None Include="Resources\003-save.png" />
+    <None Include="Resources\002-download.png" />
+    <None Include="Resources\001-diskette.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

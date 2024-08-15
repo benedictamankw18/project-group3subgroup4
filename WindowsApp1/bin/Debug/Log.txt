@@ -1,0 +1,288 @@
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 01:53:47	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 01:53:51	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 01:53:56	 Click on TENANT MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 01:53:58	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 01:54:00	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:09:05	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:09:10	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:14:46	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:14:50	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:26:42	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+31/07/2024 02:26:45	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATIONDATE TIME		 ACTION				 LOCATION
+02/08/2024 04:20:57	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:21:00	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:23:24	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:23:27	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:29:40	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:29:42	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:30:32	 Click on LOG OUT	Dashboard
+02/08/2024 04:30:51	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:30:51	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:30:54	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:01	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:04	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:13	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:15	 Click on LOG OUT	Dashboard
+02/08/2024 04:31:17	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:17	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:20	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:26	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:26	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:28	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:34	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:35	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:37	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:37	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:39	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:40	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:41	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:42	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:43	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:44	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:45	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:31:46	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:03	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:07	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:08	 Click on LOG OUT	Dashboard
+02/08/2024 04:32:23	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:23	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:25	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:32:28	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:00	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:06	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:08	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:08	 Click on HOUSES	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:12	 Click on LOG OUT	Dashboard
+02/08/2024 04:34:27	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:27	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:29	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:33	 Click on LOG OUT	Dashboard
+02/08/2024 04:34:35	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:35	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:37	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:41	 Click on LOG OUT	Dashboard
+02/08/2024 04:34:42	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:42	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:45	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:46	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:49	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:51	 Click on LOG OUT	Dashboard
+02/08/2024 04:34:53	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:53	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:55	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:58	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:34:58	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:04	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:05	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:06	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:08	 Click on LOG OUT	Dashboard
+02/08/2024 04:35:10	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:10	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:12	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:14	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:15	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:16	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:17	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:18	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:19	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:21	 Click on LOG OUT	Dashboard
+02/08/2024 04:35:23	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:23	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:25	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:26	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:28	 Click on LOG OUT	Dashboard
+02/08/2024 04:35:30	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:30	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:35:32	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:38:32	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:38:40	 Click on AGENT MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:38:42	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:38:45	 Click on LOG OUT	Dashboard
+02/08/2024 04:39:03	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:39:03	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:39:05	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:39:09	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:46:40	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 04:46:42	 Click on SETTING	Dashboard
+02/08/2024 04:46:46	 tried logging  	SIGN IN02/08/2024 04:47:40	 tried logging  	SIGN IN02/08/2024 04:47:41	 tried logging  	SIGN IN02/08/2024 04:47:42	 tried logging  	SIGN IN02/08/2024 04:47:43	 tried logging  	SIGN INDATE TIME		 ACTION				 LOCATION
+02/08/2024 16:20:27	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 16:20:33	Unable to connect to any of the specified MySQL hosts.	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 16:23:49	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+02/08/2024 16:23:53	Unable to connect to any of the specified MySQL hosts.	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:56:54	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:03	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:07	 Click on TENANT MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:09	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:12	 Click on DASHBOARD	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:15	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:16	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:57:18	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:58:19	Adding Maintenance responed to the Database	frmLand
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 04:58:37	Adding Maintenance responed to the Database	frmLand
+04/08/2024 05:00:11	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:00:12	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:00:14	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:00:21	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:00:35	Adding Maintenance responed to the Database	frmLand
+04/08/2024 05:08:56	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:09:00	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:09:02	 Connecting to the database 	Dashboard
+04/08/2024 05:11:25	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:11:26	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:11:29	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:11:39	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:11:52	Adding Maintenance responed to the Database	frmLand
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:20:06	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:20:20	 Click on SETTING	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:24:32	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:24:37	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:34	 Connecting to the database 	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:36	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:53	 Click on TENANT MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:55	 Click on DASHBOARD	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:57	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:26:59	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:02	 Click on TENANT MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:06	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:10	 Click on DASHBOARD	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:11	 Click on Mode button	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:13	 Click on PROPERTY MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:18	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 05:27:19	 Click on CLIENTS	Dashboard
+DATE TIME		 ACTION				 LOCATION
+04/08/2024 06:19:27	 Connecting to the database 	Dashboard
