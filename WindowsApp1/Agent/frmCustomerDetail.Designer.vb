@@ -81,7 +81,7 @@ Partial Class frmCustomerDetail
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
         Me.Panel3.Controls.Add(Me.dgvCustomerDetail)
         Me.Panel3.Controls.Add(Me.btnClear)
         Me.Panel3.Controls.Add(Me.btnUpdate)
@@ -557,7 +557,7 @@ Partial Class frmCustomerDetail
         '
         'Panel4
         '
-        Me.Panel4.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Panel4.Controls.Add(Me.txtSearch)
         Me.Panel4.Controls.Add(Me.cboSortByCountry)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
@@ -617,7 +617,7 @@ Partial Class frmCustomerDetail
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.btnOwner)
         Me.Panel2.Controls.Add(Me.btnAll)
         Me.Panel2.Controls.Add(Me.btnTrenant)

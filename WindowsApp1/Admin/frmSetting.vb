@@ -147,6 +147,7 @@ Public Class frmSetting
                         command.Parameters.AddWithValue("@Role", user_role)
 
                         Dim reader As Object = command.ExecuteReader()
+                        Mode.password = txtCPass.Text
 
                         reader.Close()
                         txtPass.Clear()

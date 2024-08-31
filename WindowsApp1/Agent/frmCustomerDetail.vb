@@ -114,8 +114,8 @@ Public Class frmCustomerDetail
     End Sub
 
     Private Sub clear()
-        cboSortByCountry.SelectedIndex = 0
-        txtSearch.Text = ""
+        ' cboSortByCountry.SelectedIndex = 0
+        'txtSearch.Text = ""
         txtFName.Text = ""
         txtLName.Text = ""
         txtMName.Text = ""

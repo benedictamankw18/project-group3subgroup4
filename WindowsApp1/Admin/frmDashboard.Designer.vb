@@ -833,6 +833,7 @@ Partial Class frmDashboard
         'btnUserIcon
         '
         Me.btnUserIcon.CheckedState.Parent = Me.btnUserIcon
+        Me.btnUserIcon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnUserIcon.HoverState.ImageSize = New System.Drawing.Size(37, 37)
         Me.btnUserIcon.HoverState.Parent = Me.btnUserIcon
         Me.btnUserIcon.Image = Global.WindowsApp1.My.Resources.Resources.LOGOCOLOR2

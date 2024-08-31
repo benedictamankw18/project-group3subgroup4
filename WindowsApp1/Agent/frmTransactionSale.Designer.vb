@@ -32,6 +32,7 @@ Partial Class frmTransactionSale
         Me.btnDelete = New Guna.UI2.WinForms.Guna2Button()
         Me.btnSave = New Guna.UI2.WinForms.Guna2Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblAmountMoreLess = New System.Windows.Forms.Label()
         Me.lblSaleNote = New System.Windows.Forms.Label()
         Me.lblClosedDate = New System.Windows.Forms.Label()
         Me.lblTransactionType = New System.Windows.Forms.Label()
@@ -67,7 +68,7 @@ Partial Class frmTransactionSale
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.txtSearch)
         Me.Panel1.Controls.Add(Me.btnSale)
         Me.Panel1.Controls.Add(Me.btnTransaction)
@@ -143,6 +144,9 @@ Partial Class frmTransactionSale
         '
         'Panel2
         '
+        Me.Panel2.AutoScroll = True
+        Me.Panel2.AutoScrollMargin = New System.Drawing.Size(0, 20)
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.btnClear)
         Me.Panel2.Controls.Add(Me.btnUpdate)
         Me.Panel2.Controls.Add(Me.btnDelete)
@@ -239,6 +243,7 @@ Partial Class frmTransactionSale
         '
         Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.Controls.Add(Me.lblAmountMoreLess)
         Me.GroupBox1.Controls.Add(Me.lblSaleNote)
         Me.GroupBox1.Controls.Add(Me.lblClosedDate)
         Me.GroupBox1.Controls.Add(Me.lblTransactionType)
@@ -271,6 +276,17 @@ Partial Class frmTransactionSale
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "CUSTOMER'S DETAIL"
+        '
+        'lblAmountMoreLess
+        '
+        Me.lblAmountMoreLess.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblAmountMoreLess.AutoSize = True
+        Me.lblAmountMoreLess.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.lblAmountMoreLess.Location = New System.Drawing.Point(693, 71)
+        Me.lblAmountMoreLess.Name = "lblAmountMoreLess"
+        Me.lblAmountMoreLess.Size = New System.Drawing.Size(69, 15)
+        Me.lblAmountMoreLess.TabIndex = 199
+        Me.lblAmountMoreLess.Text = "Ghc -000.00"
         '
         'lblSaleNote
         '
@@ -316,12 +332,13 @@ Partial Class frmTransactionSale
         '
         Me.dtpClosedDate.BaseColor = System.Drawing.Color.White
         Me.dtpClosedDate.BorderColor = System.Drawing.Color.Silver
-        Me.dtpClosedDate.CustomFormat = Nothing
+        Me.dtpClosedDate.CustomFormat = "yyyy/MM/dd"
         Me.dtpClosedDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
         Me.dtpClosedDate.Enabled = False
         Me.dtpClosedDate.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtpClosedDate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.dtpClosedDate.ForeColor = System.Drawing.Color.Black
+        Me.dtpClosedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpClosedDate.Location = New System.Drawing.Point(282, 179)
         Me.dtpClosedDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.dtpClosedDate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
@@ -332,7 +349,7 @@ Partial Class frmTransactionSale
         Me.dtpClosedDate.OnPressedColor = System.Drawing.Color.Black
         Me.dtpClosedDate.Size = New System.Drawing.Size(219, 26)
         Me.dtpClosedDate.TabIndex = 194
-        Me.dtpClosedDate.Text = "14 August 2024"
+        Me.dtpClosedDate.Text = "2024/08/14"
         Me.dtpClosedDate.Value = New Date(2024, 8, 14, 0, 0, 0, 0)
         '
         'cboTransactionType
@@ -346,7 +363,7 @@ Partial Class frmTransactionSale
         Me.cboTransactionType.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.cboTransactionType.ForeColor = System.Drawing.Color.Black
         Me.cboTransactionType.FormattingEnabled = True
-        Me.cboTransactionType.Items.AddRange(New Object() {"REFUND", "ADJUSTMENT"})
+        Me.cboTransactionType.Items.AddRange(New Object() {"REFUND", "ADJUSTMENT", "SALE"})
         Me.cboTransactionType.Location = New System.Drawing.Point(21, 179)
         Me.cboTransactionType.Name = "cboTransactionType"
         Me.cboTransactionType.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -376,11 +393,12 @@ Partial Class frmTransactionSale
         '
         Me.dtpDate.BaseColor = System.Drawing.Color.White
         Me.dtpDate.BorderColor = System.Drawing.Color.Silver
-        Me.dtpDate.CustomFormat = Nothing
+        Me.dtpDate.CustomFormat = "yyyy/MM/dd"
         Me.dtpDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
         Me.dtpDate.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.dtpDate.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.dtpDate.ForeColor = System.Drawing.Color.Black
+        Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpDate.Location = New System.Drawing.Point(282, 133)
         Me.dtpDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.dtpDate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
@@ -391,7 +409,7 @@ Partial Class frmTransactionSale
         Me.dtpDate.OnPressedColor = System.Drawing.Color.Black
         Me.dtpDate.Size = New System.Drawing.Size(219, 26)
         Me.dtpDate.TabIndex = 31
-        Me.dtpDate.Text = "14 August 2024"
+        Me.dtpDate.Text = "2024/08/14"
         Me.dtpDate.Value = New Date(2024, 8, 14, 0, 0, 0, 0)
         '
         'txtAmountPaid
@@ -691,4 +709,5 @@ Partial Class frmTransactionSale
     Friend WithEvents lblTransactionType As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents dtpClosedDate As Guna.UI.WinForms.GunaDateTimePicker
+    Friend WithEvents lblAmountMoreLess As Label
 End Class

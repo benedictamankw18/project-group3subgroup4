@@ -368,6 +368,7 @@ Partial Class frmSetting
         Me.btnComPassView.BackColor = System.Drawing.SystemColors.Control
         Me.btnComPassView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnComPassView.CheckedState.Parent = Me.btnComPassView
+        Me.btnComPassView.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnComPassView.HoverState.ImageSize = New System.Drawing.Size(30, 30)
         Me.btnComPassView.HoverState.Parent = Me.btnComPassView
         Me.btnComPassView.Image = Global.WindowsApp1.My.Resources.Resources.eye30px
@@ -384,6 +385,7 @@ Partial Class frmSetting
         Me.btnPassView.BackColor = System.Drawing.SystemColors.Control
         Me.btnPassView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnPassView.CheckedState.Parent = Me.btnPassView
+        Me.btnPassView.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnPassView.HoverState.ImageSize = New System.Drawing.Size(30, 30)
         Me.btnPassView.HoverState.Parent = Me.btnPassView
         Me.btnPassView.Image = Global.WindowsApp1.My.Resources.Resources.eye30px

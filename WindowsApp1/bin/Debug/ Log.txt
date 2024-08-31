@@ -1528,3 +1528,293 @@ DATE TIME		 ACTION				 LOCATION
 14/08/2024 17:42:07	 Click on Mode button	Dashboard
 DATE TIME		 ACTION				 LOCATION
 14/08/2024 17:42:09	 Click on Mode button	Dashboard
+18/08/2024 15:21:06	 LUNCHING THE APPLICATION 	LUNCHER
+18/08/2024 15:21:38	 tried logging  	SIGN IN
+18/08/2024 15:21:40	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+18/08/2024 15:21:45	 Connecting to the database 	Dashboard
+18/08/2024 15:21:51	 Click on MENU	Dashboard
+18/08/2024 15:21:54	 Click on SETTING	Dashboard
+18/08/2024 15:21:56	 Click on LOG OUT	Dashboard
+18/08/2024 15:22:17	 tried logging  	SIGN IN
+18/08/2024 15:22:17	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+18/08/2024 17:31:07	 LUNCHING THE APPLICATION 	LUNCHER
+18/08/2024 17:32:04	 tried logging  	SIGN IN
+18/08/2024 17:32:06	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+18/08/2024 17:32:07	 Connecting to the database 	Dashboard
+18/08/2024 17:32:13	 Click on MENU	Dashboard
+18/08/2024 17:32:17	 Click on MENU	Dashboard
+18/08/2024 17:32:41	 Click on MENU	Dashboard
+18/08/2024 17:32:42	 Click on MENU	Dashboard
+18/08/2024 17:32:48	 Click on TENANT MANAGEMENT	Dashboard
+18/08/2024 17:32:54	 Click on TENANT MANAGEMENT	Dashboard
+18/08/2024 17:32:56	 Click on MENU	Dashboard
+18/08/2024 17:32:58	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+18/08/2024 17:33:00	 Click on CLIENTS	Dashboard
+18/08/2024 17:33:02	 Click on MENU	Dashboard
+18/08/2024 17:33:04	 Click on MENU	Dashboard
+18/08/2024 17:33:06	 Click on DASHBOARD	Dashboard
+18/08/2024 17:33:07	 Click on MENU	Dashboard
+18/08/2024 17:33:30	 Click on MENU	Dashboard
+18/08/2024 17:33:32	 Click on MENU	Dashboard
+18/08/2024 17:33:35	 Click on SETTING	Dashboard
+18/08/2024 17:33:50	 Click on MENU	Dashboard
+18/08/2024 17:33:51	 Click on MENU	Dashboard
+18/08/2024 17:33:59	 Click on Mode button	Dashboard
+18/08/2024 17:34:01	 Click on MENU	Dashboard
+18/08/2024 17:34:03	 Click on DASHBOARD	Dashboard
+18/08/2024 17:34:04	 Click on MENU	Dashboard
+18/08/2024 17:34:11	 Click on LOG OUT	Dashboard
+18/08/2024 17:34:37	 tried logging  	SIGN IN
+18/08/2024 17:34:37	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+18/08/2024 17:38:11	 tried logging  	SIGN IN
+18/08/2024 17:38:11	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+18/08/2024 17:38:13	 Connecting to the database 	Dashboard
+18/08/2024 17:40:12	 Click on SETTING	Dashboard
+18/08/2024 17:40:15	 Click on SETTING	Dashboard
+18/08/2024 17:40:16	 Click on SETTING	Dashboard
+18/08/2024 17:40:18	 Click on Mode button	Dashboard
+18/08/2024 17:40:19	 Click on Mode button	Dashboard
+18/08/2024 17:40:20	 Click on Mode button	Dashboard
+18/08/2024 17:40:21	 Click on SETTING	Dashboard
+18/08/2024 17:40:22	 Click on SETTING	Dashboard
+18/08/2024 17:40:24	 Click on DASHBOARD	Dashboard
+18/08/2024 17:40:29	 Click on SETTING	Dashboard
+18/08/2024 17:40:29	 Click on SETTING	Dashboard
+18/08/2024 17:40:30	 Click on SETTING	Dashboard
+18/08/2024 17:40:30	 Click on SETTING	Dashboard
+24/08/2024 23:59:30	 LUNCHING THE APPLICATION 	LUNCHER
+25/08/2024 00:00:02	 tried logging  	SIGN IN
+25/08/2024 00:00:03	 Logged in has Username:   Role: 	SIGN IN
+25/08/2024 00:00:38	 tried logging  	SIGN IN
+25/08/2024 00:00:39	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+25/08/2024 00:00:41	 Connecting to the database 	Dashboard
+25/08/2024 00:00:48	 Click on MENU	Dashboard
+25/08/2024 00:00:50	 Click on PROPERTY MANAGEMENT	Dashboard
+25/08/2024 00:01:00	 Click on TENANT MANAGEMENT	Dashboard
+25/08/2024 00:01:12	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+25/08/2024 00:01:32	 Click on AGENT MANAGEMENT	Dashboard
+25/08/2024 00:01:37	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+25/08/2024 00:01:38	 Click on SALES	Dashboard
+25/08/2024 00:01:47	 Click on TRANSACTIONS	Dashboard
+25/08/2024 00:01:49	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+25/08/2024 00:01:50	 Click on CLIENTS	Dashboard
+25/08/2024 00:01:53	 Click on OWNER	Dashboard
+25/08/2024 00:01:55	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+25/08/2024 00:01:56	 Click on HOUSES	Dashboard
+25/08/2024 00:02:00	 Click on RENT	Dashboard
+25/08/2024 00:02:05	 Click on SETTING	Dashboard
+25/08/2024 00:03:47	 Click on Mode button	Dashboard
+25/08/2024 00:03:48	 Click on Mode button	Dashboard
+25/08/2024 00:04:00	 Click on MENU	Dashboard
+25/08/2024 00:04:01	 Click on MENU	Dashboard
+25/08/2024 00:04:02	 Click on MENU	Dashboard
+25/08/2024 00:04:03	 Click on MENU	Dashboard
+25/08/2024 00:04:06	 Click on LOG OUT	Dashboard
+25/08/2024 00:04:26	 tried logging  	SIGN IN
+25/08/2024 00:04:26	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+25/08/2024 00:10:48	 LUNCHING THE APPLICATION 	LUNCHER
+25/08/2024 00:11:20	 tried logging  	SIGN IN
+25/08/2024 00:11:21	 Logged in has Username:   Role: 	SIGN IN
+25/08/2024 00:11:30	 tried logging  	SIGN IN
+25/08/2024 00:11:30	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+27/08/2024 10:28:53	 LUNCHING THE APPLICATION 	LUNCHER
+27/08/2024 10:29:31	 tried logging  	SIGN IN
+27/08/2024 10:29:33	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+27/08/2024 10:29:36	 Connecting to the database 	Dashboard
+27/08/2024 10:29:53	 Click on UserIcon button 	Dashboard
+27/08/2024 10:29:56	 Click on UserIcon button 	Dashboard
+27/08/2024 10:29:59	 Click on MENU	Dashboard
+27/08/2024 10:30:00	 Click on MENU	Dashboard
+27/08/2024 10:30:02	 Click on UserIcon button 	Dashboard
+27/08/2024 10:30:04	 Click on Mode button	Dashboard
+27/08/2024 10:30:07	 Click on Mode button	Dashboard
+27/08/2024 10:30:08	 Click on UserIcon button 	Dashboard
+27/08/2024 10:30:36	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+27/08/2024 10:30:39	 Click on HOUSES	Dashboard
+27/08/2024 10:30:46	 Click on MENU	Dashboard
+27/08/2024 10:30:48	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+27/08/2024 10:30:51	 Click on RENT	Dashboard
+27/08/2024 10:31:05	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+27/08/2024 10:31:06	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+27/08/2024 10:31:08	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+27/08/2024 10:31:09	 Click on OWNER	Dashboard
+27/08/2024 10:31:13	 Click on CLIENTS	Dashboard
+27/08/2024 10:31:16	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+27/08/2024 10:31:17	 Click on SALES	Dashboard
+27/08/2024 10:31:23	 Click on TRANSACTIONS	Dashboard
+27/08/2024 10:31:26	 Click on AGENT MANAGEMENT	Dashboard
+27/08/2024 10:31:52	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+27/08/2024 10:31:58	 Click on TENANT MANAGEMENT	Dashboard
+27/08/2024 10:32:19	 Click on PROPERTY MANAGEMENT	Dashboard
+27/08/2024 10:32:27	 Click on DASHBOARD	Dashboard
+27/08/2024 10:32:37	 Click on PROPERTY MANAGEMENT	Dashboard
+27/08/2024 10:32:47	 Click on TENANT MANAGEMENT	Dashboard
+27/08/2024 10:32:51	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+27/08/2024 10:33:05	 Click on AGENT MANAGEMENT	Dashboard
+27/08/2024 10:33:07	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+27/08/2024 10:33:08	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+27/08/2024 10:33:09	 Click on SALES	Dashboard
+27/08/2024 10:33:10	 Click on TRANSACTIONS	Dashboard
+27/08/2024 10:33:12	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+27/08/2024 10:33:13	 Click on CLIENTS	Dashboard
+27/08/2024 10:33:14	 Click on OWNER	Dashboard
+27/08/2024 10:33:15	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+27/08/2024 10:33:16	 Click on HOUSES	Dashboard
+27/08/2024 10:33:17	 Click on RENT	Dashboard
+27/08/2024 10:33:40	 Click on SETTING	Dashboard
+27/08/2024 10:37:37	 LUNCHING THE APPLICATION 	LUNCHER
+27/08/2024 10:38:13	 tried logging  	SIGN IN
+27/08/2024 10:38:14	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+27/08/2024 10:48:42	 LUNCHING THE APPLICATION 	LUNCHER
+27/08/2024 10:49:38	 tried logging  	SIGN IN
+27/08/2024 10:49:38	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 03:08:55	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 03:09:00	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 03:15:25	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 03:15:28	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 03:31:29	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 03:31:31	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 03:50:45	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 03:50:47	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 04:20:43	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 04:20:45	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 04:28:35	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 04:28:37	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 04:33:27	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+29/08/2024 04:33:29	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 04:57:40	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 04:58:25	 tried logging  	SIGN IN
+29/08/2024 04:58:27	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 05:10:43	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 05:11:19	 tried logging  	SIGN IN
+29/08/2024 05:11:21	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 05:31:16	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 05:31:57	 tried logging  	SIGN IN
+29/08/2024 05:31:58	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 05:52:54	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 05:53:26	 tried logging  	SIGN IN
+29/08/2024 05:53:26	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:09:49	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:10:19	 tried logging  	SIGN IN
+29/08/2024 06:10:20	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:12:24	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:13:02	 tried logging  	SIGN IN
+29/08/2024 06:13:03	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:16:22	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:17:16	 tried logging  	SIGN IN
+29/08/2024 06:17:17	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:22:28	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:23:16	 tried logging  	SIGN IN
+29/08/2024 06:23:17	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:26:45	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:27:25	 tried logging  	SIGN IN
+29/08/2024 06:27:26	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 06:38:08	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:38:35	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 06:39:22	 tried logging  	SIGN IN
+29/08/2024 06:39:25	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 07:09:53	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 07:11:04	 tried logging  	SIGN IN
+29/08/2024 07:11:06	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+29/08/2024 07:15:15	 LUNCHING THE APPLICATION 	LUNCHER
+29/08/2024 07:20:27	 tried logging  	SIGN IN
+29/08/2024 07:20:28	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+30/08/2024 09:53:22	 LUNCHING THE APPLICATION 	LUNCHER
+30/08/2024 10:04:17	 LUNCHING THE APPLICATION 	LUNCHER
+30/08/2024 10:05:12	 tried logging  	SIGN IN
+30/08/2024 10:05:13	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+30/08/2024 12:27:17	 LUNCHING THE APPLICATION 	LUNCHER
+30/08/2024 12:29:46	 tried logging  	SIGN IN
+30/08/2024 12:29:48	 Logged in has Username: john.doe  Role: Admin	SIGN IN
+30/08/2024 12:29:54	 Connecting to the database 	Dashboard
+30/08/2024 12:30:50	 Click on Mode button	Dashboard
+30/08/2024 12:30:56	 Click on Mode button	Dashboard
+30/08/2024 12:31:27	 Click on MENU	Dashboard
+30/08/2024 12:31:28	 Click on PROPERTY MANAGEMENT	Dashboard
+30/08/2024 12:31:35	 Click on TENANT MANAGEMENT	Dashboard
+30/08/2024 12:31:42	 Click on MAINTENANCE          MANAGEMENT 	Dashboard
+30/08/2024 12:31:44	 Click on AGENT MANAGEMENT	Dashboard
+30/08/2024 12:31:51	 Click on SALE AND TRANSCATION MANAGEMENT	Dashboard
+30/08/2024 12:31:52	 Click on SALES	Dashboard
+30/08/2024 12:31:57	 Click on TRANSACTIONS	Dashboard
+30/08/2024 12:32:00	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+30/08/2024 12:32:01	 Click on CLIENTS	Dashboard
+30/08/2024 12:32:02	 Click on OWNER	Dashboard
+30/08/2024 12:32:03	 Click on CLIENTS AND OWNER MANAGEMENT	Dashboard
+30/08/2024 12:32:04	 Click on PROPERTY TYPES AND CATEGORIES	Dashboard
+30/08/2024 12:32:05	 Click on HOUSES	Dashboard
+30/08/2024 12:32:09	 Click on SETTING	Dashboard
+30/08/2024 12:32:12	 Click on HOUSES	Dashboard
+30/08/2024 12:32:17	 Click on PROPERTY MANAGEMENT	Dashboard
+30/08/2024 12:35:26	Upated a Property from the Database	frmInbox
+30/08/2024 12:35:45	 Click on SETTING	Dashboard
+30/08/2024 12:36:43	 Click on LOG OUT	Dashboard
+30/08/2024 12:37:16	 tried logging  	SIGN IN
+30/08/2024 12:37:16	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+30/08/2024 17:46:46	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+30/08/2024 17:46:48	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+30/08/2024 18:23:36	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+30/08/2024 18:23:37	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+30/08/2024 23:26:54	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+30/08/2024 23:26:55	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 00:03:42	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 00:03:45	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 00:25:32	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 00:25:33	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 00:32:38	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 00:32:40	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 00:48:00	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 00:48:03	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 00:52:55	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 00:52:56	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 01:21:50	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 01:21:51	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 01:30:17	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 01:30:17	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 01:39:51	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 01:39:52	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+31/08/2024 02:13:13	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:13:16	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:14:26	Changing your password from the Database	frmAgentSetting
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:16:13	Changing your Profile Picture from the Database	frmAgentSetting
+31/08/2024 02:16:30	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:16:30	 Logged in has Username:   Role: 	SIGN IN
+31/08/2024 02:16:42	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:16:42	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:17:14	Changing your password from the Database	frmAgentSetting
+31/08/2024 02:29:14	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:29:15	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:29:46	Changing your Profile Picture from the Database	frmAgentSetting
+31/08/2024 02:32:19	 tried logging  	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:32:19	 Logged in has Username: jane.smith  Role: Agent	SIGN IN
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:33:07	Changing your password from the Database	frmAgentSetting
+DATE TIME		 ACTION				 LOCATION
+31/08/2024 02:33:23	Changing your password from the Database	frmAgentSetting

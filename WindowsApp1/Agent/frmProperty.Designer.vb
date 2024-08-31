@@ -58,7 +58,7 @@ Partial Class frmProperty
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.txtSearch)
         Me.Panel2.Controls.Add(Me.btnRent)
         Me.Panel2.Controls.Add(Me.btnAll)

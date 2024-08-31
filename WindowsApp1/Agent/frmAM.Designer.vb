@@ -48,7 +48,7 @@ Partial Class frmAM
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.txtSearch)
         Me.Panel1.Controls.Add(Me.cboPropertyType)
         Me.Panel1.Controls.Add(Me.cboSProblemStatus)
@@ -131,6 +131,7 @@ Partial Class frmAM
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.cboPropertyName)
         Me.Panel2.Controls.Add(Me.txtPropertyType)
         Me.Panel2.Controls.Add(Me.btnUpdate)

@@ -17,8 +17,10 @@ Public Class frmLog
     End Sub
 
     Private Sub btnCopy_Click(sender As Object, e As EventArgs) Handles btnCopy.Click
-        Clipboard.SetText(rtbLogs.Text)
-        MessageBox.Show("Copied to Clipboard", "Information")
+        If rtbLogs.Text.Length > 0 Then
+            Clipboard.SetText(rtbLogs.Text)
+            MessageBox.Show("Copied to Clipboard", "Information")
+        End If
     End Sub
 
     ' Your existing PrintDocument1_PrintPage method
