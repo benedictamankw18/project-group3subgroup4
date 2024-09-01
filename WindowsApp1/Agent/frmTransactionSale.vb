@@ -22,7 +22,7 @@ Public Class frmTransactionSale
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            query = "select Property_name from property;"
+            query = "select Property_name from property WHERE `User_Id` = " & Mode.UserId & ";"
             Using com As New MySqlCommand(query, con)
                 Dim dr As MySqlDataReader = com.ExecuteReader
                 While dr.Read
@@ -31,7 +31,7 @@ Public Class frmTransactionSale
                 dr.Close()
             End Using
 
-            query = "select case when mName Is NULL or mName = '' then concat(fName, ' ', lName) else concat(fName, ' ', mName, ' ', lName) end as Customer_name from customer;"
+            query = "select case when mName Is NULL or mName = '' then concat(fName, ' ', lName) else concat(fName, ' ', mName, ' ', lName) end as Customer_name from customer WHERE `User_Id` = " & Mode.UserId & ";"
             Using com As New MySqlCommand(query, con)
                 Dim dr As MySqlDataReader = com.ExecuteReader
                 While dr.Read
@@ -65,7 +65,7 @@ Public Class frmTransactionSale
         dtpClosedDate.Visible = False
         txtSaleNote.Visible = False
         cboTransactionType.Visible = True
-        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id;"
+        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id WHERE t.`User_Id` = " & Mode.UserId & ";"
         loadData(query)
         saleOrTrans = 1
         clear()
@@ -86,7 +86,7 @@ Public Class frmTransactionSale
         lblSaleNote.Left = 282
         dtpClosedDate.Left = cboTransactionType.Left
         lblClosedDate.Left = cboTransactionType.Left
-        query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id;"
+        query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id WHERE s.`User_Id` = " & Mode.UserId & ";"
         loadData(query)
         saleOrTrans = 2
         clear()
@@ -199,7 +199,7 @@ Public Class frmTransactionSale
                             command.Parameters.AddWithValue("@Transaction_type", cboTransactionType.Text)
                             command.ExecuteNonQuery()
                         End Using
-                        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id;"
+                        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id WHERE t.`User_Id` = " & Mode.UserId & ";"
                         loadData(query)
                         MessageBox.Show("Information Updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Catch ex As Exception
@@ -310,8 +310,8 @@ Public Class frmTransactionSale
                                 transaction.Commit()
 
                                 MessageBox.Show("Information Updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                                query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id;"
-                                loadData(query)
+                            query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id WHERE s.`User_Id` = " & Mode.UserId & ";"
+                            loadData(query)
                             Catch ex As Exception
                                 transaction.Rollback()
                                 MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -346,7 +346,7 @@ Public Class frmTransactionSale
                             command.ExecuteNonQuery()
                         End Using
                     End Using
-                    query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id;"
+                    query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id WHERE t.`User_Id` = " & Mode.UserId & ";"
                     loadData(query)
                     MessageBox.Show("Data Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
@@ -382,7 +382,7 @@ Public Class frmTransactionSale
                     End Using
                     MessageBox.Show("Data Deleted", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                    query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id;"
+                    query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id WHERE s.`User_Id` = " & Mode.UserId & ";"
                     loadData(query)
 
                 Else
@@ -525,7 +525,7 @@ Public Class frmTransactionSale
 
                             MessageBox.Show("Information Saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                            query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id;"
+                            query = "SELECT s.sale_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', s.Sale_Amount, p.Property_Price, s.Payment_Mode, s.Sale_Status, s.sale_Date, s.Closing_Date, s.Payment_reference, s.Sale_Notes FROM g3subvb.sale AS s  JOIN g3subvb.property AS p ON s.Property_Id = p.Property_Id  JOIN g3subvb.customer AS c ON s.Customer_id = c.Customer_id WHERE s.`User_Id` = " & Mode.UserId & ";"
                             loadData(query)
 
                         Catch ex As Exception
@@ -622,7 +622,7 @@ Public Class frmTransactionSale
                                 command.Parameters.AddWithValue("@Transaction_type", cboTransactionType.Text)
                             command.ExecuteNonQuery()
                         End Using
-                        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id;"
+                        query = "SELECT t.Transaction_Id, p.Property_name, CASE WHEN c.mName IS NULL OR c.mName = '' THEN CONCAT(c.fName, ' ', c.lName) ELSE CONCAT(c.fName, ' ', c.mName, ' ', c.lName) END AS Customer_Name,  p.Property_sale_rent AS 'Sale Or Rent', t.Transaction_Amount, p.Property_Price, t.Payment_Mode, t.Transaction_Status, t.Transaction_Date, t.Transaction_type, t.Payment_reference FROM g3subvb.transaction AS t LEFT JOIN g3subvb.property AS p ON t.Property_Id = p.Property_Id LEFT JOIN g3subvb.customer AS c ON t.Customer_id = c.Customer_id WHERE t.`User_Id` = " & Mode.UserId & ";"
                         loadData(query)
 
                         MessageBox.Show("Information Saved", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -644,7 +644,7 @@ Public Class frmTransactionSale
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim query As String = "select Property_sale_rent, Property_price from property where Property_name = '" & cboPropertyName.Text & "';"
+            Dim query As String = "select Property_sale_rent, Property_price from property where Property_name = '" & cboPropertyName.Text & "' and  `User_Id` = " & Mode.UserId & ";"
             Using com As New MySqlCommand(query, con)
                 Dim dr As MySqlDataReader = com.ExecuteReader
                 While dr.Read

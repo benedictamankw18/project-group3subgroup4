@@ -12,7 +12,7 @@ Public Class frmAM
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim query As String = "select Property_type, Property_name from property;"
+            Dim query As String = "select Property_type, Property_name from property WHERE `User_Id` = " & Mode.UserId & ";"
             Using com As New MySqlCommand(query, con)
                 Dim dr As MySqlDataReader = com.ExecuteReader
                 While dr.Read
@@ -39,7 +39,7 @@ Public Class frmAM
         Try
             con.Open()
 
-            Dim query As String = "SELECT maintenance.Mat_Id as Maintenance_ID, property.Property_name, property.Property_location, property.Property_type, maintenance.Problem_status, maintenance.Problem_Description FROM g3subvb.property RIGHT JOIN g3subvb.maintenance on property.Property_Id = maintenance.Property_Id;"
+            Dim query As String = "SELECT maintenance.Mat_Id as Maintenance_ID, property.Property_name, property.Property_location, property.Property_type, maintenance.Problem_status, maintenance.Problem_Description FROM g3subvb.property RIGHT JOIN g3subvb.maintenance on property.Property_Id = maintenance.Property_Id WHERE property.`User_Id` = " & Mode.UserId & ";"
             com = New MySqlCommand(query, con)
             SDA.SelectCommand = com
             SDA.Fill(dbDataset)
@@ -121,7 +121,7 @@ Public Class frmAM
         Try
             con.Open()
 
-            Dim query As String = "SELECT Property_location, Property_type  FROM g3subvb.property where Property_name = '" & cboPropertyName.Text & "';"
+            Dim query As String = "SELECT Property_location, Property_type  FROM g3subvb.property where Property_name = '" & cboPropertyName.Text & "' and  property.`User_Id` = " & Mode.UserId & ";"
             com = New MySqlCommand(query, con)
             Dim dr As MySqlDataReader = com.ExecuteReader
             While dr.Read
@@ -170,7 +170,7 @@ Public Class frmAM
         Try
             con.Open()
 
-            Dim searchQuery As String = "SELECT Property_Id FROM property WHERE Property_name = @PropertyName AND Property_location = @PropertyLocation AND Property_type = @PropertyType"
+            Dim searchQuery As String = "SELECT Property_Id FROM property WHERE Property_name = @PropertyName AND Property_location = @PropertyLocation AND Property_type = @PropertyType WHERE property.`User_Id` = " & Mode.UserId & ""
 
             Using searchCommand As New MySqlCommand(searchQuery, con)
 
@@ -298,7 +298,7 @@ Public Class frmAM
 
                         connection.Open()
 
-                        Dim searchQuery As String = "SELECT Property_Id FROM property WHERE Property_name = @PropertyName AND Property_location = @PropertyLocation AND Property_type = @PropertyType"
+                        Dim searchQuery As String = "SELECT Property_Id FROM property WHERE Property_name = @PropertyName AND Property_location = @PropertyLocation AND Property_type = @PropertyType WHERE property.`User_Id` = " & Mode.UserId & ""
 
                         Using searchCommand As New MySqlCommand(searchQuery, connection)
 

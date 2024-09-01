@@ -156,7 +156,7 @@ Public Class frmAgentDashboard
         btnMaintenance.BaseColor = Color.Transparent
         btnSetting.BaseColor = Color.Transparent
         btnCustomerDetail.BaseColor = Color.Transparent
-        LoadForm(frmHome)
+        LoadForm(New frmHome)
     End Sub
 
     Private Sub btnProperty_Click(sender As Object, e As EventArgs) Handles btnProperty.Click

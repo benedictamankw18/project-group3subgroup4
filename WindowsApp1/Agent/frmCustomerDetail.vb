@@ -8,7 +8,7 @@ Public Class frmCustomerDetail
 
     Dim checked As Boolean = False
     Dim Action As Boolean = False
-    Dim query As String = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer`;"
+    Dim query As String = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer` WHERE `User_Id` = " & Mode.UserId & ";"
     Dim isFemail As Boolean = False
     Dim isSemail As Boolean = True
     Dim customerId As Integer = 0
@@ -30,7 +30,7 @@ Public Class frmCustomerDetail
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
 
-            Dim query As String = "SELECT DISTINCT `Nationality` FROM `customer`;"
+            Dim query As String = "SELECT DISTINCT `Nationality` FROM `customer` WHERE `User_Id` = " & Mode.UserId & ";"
             com = New MySqlCommand(query, con)
             Dim reader As MySqlDataReader = com.ExecuteReader
 
@@ -43,7 +43,7 @@ Public Class frmCustomerDetail
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-        query = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer`;"
+        query = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer` WHERE `User_Id` = " & Mode.UserId & ";"
         loadData()
         checked = True
         clear()
@@ -93,21 +93,21 @@ Public Class frmCustomerDetail
     End Sub
 
     Private Sub btnAll_Click(sender As Object, e As EventArgs) Handles btnAll.Click
-        query = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer`;"
+        query = "SELECT `Customer_Id`, `fName`, `lName`, `mName`, `Gender`, `First_email`, `Second_email`, `First_Phone_No`, `Second_Phone_No`, `First_Address`, `Second_Address`, `Nationality` FROM `customer` WHERE `User_Id` = " & Mode.UserId & ";"
         loadData()
         txtSearch.Text = ""
         cboSortByCountry.SelectedIndex = 0
     End Sub
 
     Private Sub btnOwner_Click(sender As Object, e As EventArgs) Handles btnOwner.Click
-        query = "SELECT DISTINCT customer.`Customer_Id`, customer.`fName`, customer.`lName`, customer.`mName`, customer.`Gender`, customer.`First_email`, customer.`Second_email`, customer.`First_Phone_No`, customer.`Second_Phone_No`, customer.`First_Address`, customer.`Second_Address`, customer.`Nationality`, ownership.Owner_Id FROM `customer` RIGHT JOIN ownership on customer.Customer_Id = ownership.Customer_id;"
+        query = "SELECT DISTINCT customer.`Customer_Id`, customer.`fName`, customer.`lName`, customer.`mName`, customer.`Gender`, customer.`First_email`, customer.`Second_email`, customer.`First_Phone_No`, customer.`Second_Phone_No`, customer.`First_Address`, customer.`Second_Address`, customer.`Nationality`, ownership.Owner_Id FROM `customer` RIGHT JOIN ownership on customer.Customer_Id = ownership.Customer_id WHERE `customer`.`User_Id` = " & Mode.UserId & ";"
         loadData()
         txtSearch.Text = ""
         cboSortByCountry.SelectedIndex = 0
     End Sub
 
     Private Sub btnTrenant_Click(sender As Object, e As EventArgs) Handles btnTrenant.Click
-        query = "SELECT DISTINCT customer.`Customer_Id`, customer.`fName`, customer.`lName`, customer.`mName`, customer.`Gender`, customer.`First_email`, customer.`Second_email`, customer.`First_Phone_No`, customer.`Second_Phone_No`, customer.`First_Address`, customer.`Second_Address`, customer.`Nationality`, tenant.Tenant_Id FROM `customer` RIGHT JOIN tenant on customer.Customer_Id = tenant.Customer_id;"
+        query = "SELECT DISTINCT customer.`Customer_Id`, customer.`fName`, customer.`lName`, customer.`mName`, customer.`Gender`, customer.`First_email`, customer.`Second_email`, customer.`First_Phone_No`, customer.`Second_Phone_No`, customer.`First_Address`, customer.`Second_Address`, customer.`Nationality`, tenant.Tenant_Id FROM `customer` RIGHT JOIN tenant on customer.Customer_Id = tenant.Customer_id WHERE `customer`.`User_Id` = " & Mode.UserId & ";"
         loadData()
         txtSearch.Text = ""
         cboSortByCountry.SelectedIndex = 0

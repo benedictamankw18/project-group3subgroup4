@@ -22,9 +22,9 @@ Partial Class frmHome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.GunaElipsePanel1 = New Guna.UI.WinForms.GunaElipsePanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.palLastest = New Guna.UI.WinForms.GunaElipsePanel()
@@ -193,6 +193,8 @@ Partial Class frmHome
         'palSaleHistory
         '
         Me.palSaleHistory.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.palSaleHistory.AutoScroll = True
+        Me.palSaleHistory.AutoScrollMargin = New System.Drawing.Size(0, 20)
         Me.palSaleHistory.BackColor = System.Drawing.Color.Transparent
         Me.palSaleHistory.BaseColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.palSaleHistory.Location = New System.Drawing.Point(13, 40)
@@ -252,6 +254,8 @@ Partial Class frmHome
         'palTransactionHistroy
         '
         Me.palTransactionHistroy.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.palTransactionHistroy.AutoScroll = True
+        Me.palTransactionHistroy.AutoScrollMargin = New System.Drawing.Size(0, 20)
         Me.palTransactionHistroy.BackColor = System.Drawing.Color.Transparent
         Me.palTransactionHistroy.BaseColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.palTransactionHistroy.Location = New System.Drawing.Point(14, 40)
@@ -287,25 +291,25 @@ Partial Class frmHome
         'chaTotalSale
         '
         Me.chaTotalSale.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        ChartArea1.Area3DStyle.Enable3D = True
-        ChartArea1.BackColor = System.Drawing.Color.Transparent
-        ChartArea1.Name = "ChartArea1"
-        Me.chaTotalSale.ChartAreas.Add(ChartArea1)
-        Legend1.Alignment = System.Drawing.StringAlignment.Center
-        Legend1.BackColor = System.Drawing.Color.Transparent
-        Legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend1.Name = "Legend1"
-        Me.chaTotalSale.Legends.Add(Legend1)
+        ChartArea3.Area3DStyle.Enable3D = True
+        ChartArea3.BackColor = System.Drawing.Color.Transparent
+        ChartArea3.Name = "ChartArea1"
+        Me.chaTotalSale.ChartAreas.Add(ChartArea3)
+        Legend3.Alignment = System.Drawing.StringAlignment.Center
+        Legend3.BackColor = System.Drawing.Color.Transparent
+        Legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend3.Name = "Legend1"
+        Me.chaTotalSale.Legends.Add(Legend3)
         Me.chaTotalSale.Location = New System.Drawing.Point(13, 40)
         Me.chaTotalSale.Name = "chaTotalSale"
-        Series1.BackSecondaryColor = System.Drawing.Color.Transparent
-        Series1.BorderColor = System.Drawing.Color.Transparent
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut
-        Series1.Color = System.Drawing.Color.Transparent
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.chaTotalSale.Series.Add(Series1)
+        Series3.BackSecondaryColor = System.Drawing.Color.Transparent
+        Series3.BorderColor = System.Drawing.Color.Transparent
+        Series3.ChartArea = "ChartArea1"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut
+        Series3.Color = System.Drawing.Color.Transparent
+        Series3.Legend = "Legend1"
+        Series3.Name = "Series1"
+        Me.chaTotalSale.Series.Add(Series3)
         Me.chaTotalSale.Size = New System.Drawing.Size(477, 215)
         Me.chaTotalSale.TabIndex = 6
         Me.chaTotalSale.Text = "Chart2"

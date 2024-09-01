@@ -297,7 +297,7 @@ Public Class frmProperty
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id;"
+            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id WHERE property.User_Id = " & Mode.UserId & ";"
             Using command As New MySqlCommand(qurey, con)
                 dr = command.ExecuteReader()
                 While dr.Read
@@ -317,7 +317,7 @@ Public Class frmProperty
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id;"
+            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id WHERE property.User_Id = " & Mode.UserId & ";"
             Using command As New MySqlCommand(qurey, con)
                 dr = command.ExecuteReader()
                 While dr.Read
@@ -337,7 +337,7 @@ Public Class frmProperty
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id where property.Property_sale_rent = 'Rent';"
+            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id where property.Property_sale_rent = 'Rent' and property.User_Id = " & Mode.UserId & ";"
             Using command As New MySqlCommand(qurey, con)
                 dr = command.ExecuteReader()
                 While dr.Read
@@ -357,7 +357,7 @@ Public Class frmProperty
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id where property.Property_sale_rent = 'Sale';"
+            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id where property.Property_sale_rent = 'Sale' and property.User_Id = " & Mode.UserId & ";"
             Using command As New MySqlCommand(qurey, con)
                 dr = command.ExecuteReader()
                 While dr.Read
@@ -376,7 +376,7 @@ Public Class frmProperty
         Try
             con = New MySqlConnection(My.Settings.conPathDb)
             con.Open()
-            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id  where property.Property_sale_rent like '%" & txtSearch.Text & "%' Or  property.Property_name like '%" & txtSearch.Text & "%' or property.Property_location like '%" & txtSearch.Text & "%' or property.Property_type like '%" & txtSearch.Text & "%';"
+            Dim qurey As String = "SELECT property_image.property_Id, property.Property_name, property.No_of_Bedroom, property.No_of_Bathroom, property.Property_Price, property.Property_sale_rent, property.Property_location, property.Property_type, property.Property_description, property_image.First_image FROM property RIGHT JOIN property_image ON property.Property_Id = property_image.Property_Id  where (property.Property_sale_rent like '%" & txtSearch.Text & "%' Or  property.Property_name like '%" & txtSearch.Text & "%' or property.Property_location like '%" & txtSearch.Text & "%' or property.Property_type like '%" & txtSearch.Text & "%') and property.User_Id = " & Mode.UserId & ";"
             Using command As New MySqlCommand(qurey, con)
                 dr = command.ExecuteReader()
                 While dr.Read

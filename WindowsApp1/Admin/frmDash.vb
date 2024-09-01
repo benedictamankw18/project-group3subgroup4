@@ -28,7 +28,7 @@ Public Class frmDash
         Try
             Dim notAvailableQuery As String = "SELECT COUNT(*) as Not_Available FROM `property` WHERE property.Property_availability = 'Not Available';"
             Dim TotalQuery As String = "SELECT COUNT(*) as Total FROM `property`;"
-            Using connection As New MySqlConnection("server=localhost; user=root; password=; database=g3subvb;")
+            Using connection As New MySqlConnection(My.Settings.conPathDb)
                 connection.Open()
                 Using command As New MySqlCommand(notAvailableQuery, connection)
                     Dim reader As MySqlDataReader = command.ExecuteReader()
